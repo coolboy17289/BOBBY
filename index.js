@@ -253,7 +253,7 @@ app.command("/bobby-structure", async ({ command, ack, respond }) => {
 
     const items = await getStructure(repo.url, subPath);
     if (items.length === 0) {
-      await respond({ text: "📭 No files found at this path." });
+      await respond({ text: "No files found at this path." });
       return;
     }
 
